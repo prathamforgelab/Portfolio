@@ -75,7 +75,7 @@ const cases = {
   greenmind: {
     kicker: "MULTI-CLOUD · DECISION SUPPORT",
     title: "GreenMind AI",
-    summary: "An autonomous green cloud operations system that brings monitoring, forecasting, recommendations, and scenario exploration into one engineering cockpit.",
+    summary: "A multi-cloud green-operations decision-support prototype for monitoring, forecasting, recommendations, and non-destructive scenario exploration.",
     problem: "Cloud teams balance performance, cost, reliability, and carbon across providers. GreenMind AI frames these concerns together and makes each recommendation inspectable.",
     approach: "The repository describes AWS, Azure, and GCP telemetry connectors; five-metric forecasting; five specialist agents with explicit conflict resolution; and a non-destructive digital twin. Demo and estimated data are labeled, and live remediations are not implemented.",
     tech: ["FastAPI", "React 18", "TypeScript", "scikit-learn", "LangGraph", "Docker"],
