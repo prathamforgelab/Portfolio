@@ -69,3 +69,23 @@ html[data-theme="dark"]{--accent-ink:#102217}
 .button-primary,.closing-inner{color:var(--accent-ink)}
 .closing-inner .eyebrow{color:color-mix(in srgb,var(--accent-ink) 72%,var(--green))}
 .closing-star{color:color-mix(in srgb,var(--accent-ink) 64%,transparent)}
+
+/* Refined personal wordmark, typography, and restrained interaction motion. */
+:root{--font-body:"Plus Jakarta Sans",Arial,sans-serif}
+.brand{gap:0}
+.brand-name{font:800 14px/1.1 var(--font-display);letter-spacing:-.45px}
+.brand-initial{color:var(--green)}
+.hero h1{font-weight:700}
+.hero h1 em{font-weight:600}
+.section-heading h2,.approach-section h2,.profile-copy h2{font-weight:700}
+.site-nav>a:not(.nav-resume){position:relative}
+.site-nav>a:not(.nav-resume)::after{position:absolute;right:0;bottom:-7px;left:0;height:1px;background:var(--green);content:"";transform:scaleX(0);transform-origin:left;transition:transform .24s ease}
+.site-nav>a:not(.nav-resume):hover::after,.site-nav>a:not(.nav-resume):focus-visible::after{transform:scaleX(1)}
+.button span{transition:transform .22s ease}
+.button:hover span{transform:translate(3px,-2px)}
+.project-visual{transition:filter .3s ease}
+.project-card:hover .project-visual{filter:saturate(1.06)}
+.approach-grid .approach-card:nth-child(2){transition-delay:.08s}
+.approach-grid .approach-card:nth-child(3){transition-delay:.16s}
+.education-card:nth-child(2){transition-delay:.1s}
+@media(max-width:400px){.brand-name{font-size:13px}}
