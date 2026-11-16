@@ -1,6 +1,6 @@
 # Pratham Gupta — Portfolio
 
-A responsive, static portfolio for Pratham Gupta, built from verified public GitHub project information.
+A responsive, static portfolio for Pratham Gupta, built from verified public GitHub and LinkedIn details and user-provided profile materials.
 
 ## Run locally
 
@@ -19,3 +19,4 @@ The workflow in `.github/workflows/pages.yml` deploys the repository root to Git
 - Open Graph metadata, a canonical URL, and an SVG favicon are included for sharing and browser tabs.
 - `assets/Pratham_Gupta_Resume.pdf` is the downloadable, text-based resume.
 - Education, selected certificates, contact links, and the profile portrait are based on details supplied by Pratham and the linked LinkedIn profile.
+
