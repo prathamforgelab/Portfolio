@@ -18,5 +18,4 @@ The workflow in `.github/workflows/pages.yml` deploys the repository root to Git
 - Scroll reveals are progressive enhancement, so the content remains visible when animation support is unavailable.
 - Open Graph metadata, a canonical URL, and an SVG favicon are included for sharing and browser tabs.
 - `assets/Pratham_Gupta_Resume.pdf` is the downloadable, text-based resume.
-- Direct contact details and education history are omitted because they were not verified in the supplied profiles.
-
+- Education, selected certificates, contact links, and the profile portrait are based on details supplied by Pratham and the linked LinkedIn profile.

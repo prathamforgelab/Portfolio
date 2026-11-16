@@ -144,4 +144,3 @@ dialog.addEventListener("click", (event) => {
 });
 
 document.querySelector("#year").textContent = new Date().getFullYear();
-
