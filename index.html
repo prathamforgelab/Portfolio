@@ -100,28 +100,6 @@
         </div>
       </section>
 
-      <section class="demo-section section-wrap" id="demo">
-        <div class="demo-intro reveal"><div class="eyebrow"><span class="eyebrow-line"></span> SMALL INTERACTIVE DEMO</div><h2>Think in evidence.<br /><em>Then make a call.</em></h2><p>A browser-only illustration of two ideas from the projects: compare model outputs and inspect a cloud scenario. The examples are synthetic and do not connect to a live service.</p><div class="demo-tabs" role="tablist" aria-label="Choose a demo"><button class="demo-tab active" role="tab" aria-selected="true" aria-controls="eval-demo" id="tab-eval" data-tab="eval-demo">LLM evaluation</button><button class="demo-tab" role="tab" aria-selected="false" aria-controls="cloud-demo" id="tab-cloud" data-tab="cloud-demo">Cloud scenario</button></div></div>
-        <div class="demo-panel reveal">
-          <div class="demo-panel-head"><span class="demo-status"><i></i> LOCAL PLAYGROUND</span><span class="demo-count">01 — 02</span></div>
-          <div class="demo-pane active" id="eval-demo" role="tabpanel" aria-labelledby="tab-eval">
-            <div class="demo-title"><div><small>QUALITY CHECK</small><h3>Compare two answers</h3></div><span class="demo-symbol">Δ</span></div>
-            <label class="field-label" for="expected-answer">Expected key phrase</label><input id="expected-answer" class="demo-input" value="clear evidence" />
-            <div class="answer-grid"><label><span class="field-label">Baseline answer</span><textarea id="baseline-answer" class="demo-input" rows="3">The model makes a confident guess.</textarea></label><label><span class="field-label">Candidate answer</span><textarea id="candidate-answer" class="demo-input" rows="3">The result should include clear evidence and uncertainty.</textarea></label></div>
-            <div class="demo-result" id="eval-result" aria-live="polite"><span class="result-label">WORD COVERAGE</span><strong>Ready to compare</strong><small>Try your own phrases, then run a tiny local check.</small></div>
-            <button class="button button-primary demo-run" type="button" id="run-eval">Run sample comparison <span>↗</span></button>
-            <p class="demo-footnote">Illustrative word coverage only. This is not the evaluation engine or a statistical result.</p>
-          </div>
-          <div class="demo-pane" id="cloud-demo" role="tabpanel" aria-labelledby="tab-cloud" hidden>
-            <div class="demo-title"><div><small>SCENARIO EXPLORER</small><h3>Adjust a simulated workload</h3></div><span class="demo-symbol">⌁</span></div>
-            <label class="field-label" for="cpu-range">Current CPU load <output id="cpu-output" for="cpu-range">62%</output></label><input id="cpu-range" class="range-input" type="range" min="10" max="95" value="62" />
-            <div class="scenario-select"><button class="scenario-chip selected" type="button" data-scenario="rightsize">Right-size</button><button class="scenario-chip" type="button" data-scenario="scale">Scale up</button><button class="scenario-chip" type="button" data-scenario="shift">Time-shift</button></div>
-            <div class="scenario-result" id="scenario-result" aria-live="polite"><span class="result-label">SIMULATED PREVIEW</span><strong>Capacity looks balanced</strong><small>At 62% CPU, review headroom before changing instance size.</small></div>
-            <p class="demo-footnote">Illustrative logic only. GreenMind AI labels its digital-twin outputs as simulated/estimated.</p>
-          </div>
-        </div>
-      </section>
-
       <section class="approach-section section-wrap" id="approach">
         <div class="section-heading reveal"><div><div class="eyebrow"><span class="eyebrow-line"></span> HOW I APPROACH THE WORK</div><h2>Curious, methodical,<br /><em>grounded in reality.</em></h2></div><p>Build systems that make their assumptions visible, treat evidence with respect, and stay useful beyond a demo.</p></div>
         <div class="approach-grid">
@@ -147,3 +125,4 @@
     <div class="dialog-scrim" hidden></div>
   </body>
 </html>
+
