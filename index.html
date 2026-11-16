@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5f6f3" />
+    <meta name="description" content="Pratham Gupta — aspiring AI engineer exploring practical AI, evaluation, and reliable software systems." />
+    <title>Pratham Gupta — AI & Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Pratham Gupta, home">
+        <span class="brand-mark">P<span>G</span></span>
+        <span class="brand-name">Pratham Gupta</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#work">Selected work</a>
+        <a href="#approach">Approach</a>
+        <a href="#profiles">Profiles</a>
+        <a class="nav-resume" href="assets/Pratham_Gupta_Resume.pdf" download>Resume <span aria-hidden="true">↓</span></a>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.1 15.3A8.4 8.4 0 0 1 8.7 3.9 8.5 8.5 0 1 0 20.1 15.3Z"/></svg>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-wrap" id="top">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="eyebrow-line"></span> AI & SOFTWARE ENGINEERING</div>
+          <h1>Practical ideas.<br /><em>Thoughtful systems.</em></h1>
+          <p class="hero-intro">I’m Pratham Gupta, an aspiring AI engineer exploring how intelligent systems can solve real problems with clarity, care, and solid engineering.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore selected work <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="assets/Pratham_Gupta_Resume.pdf" download>Download resume <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-meta"><span class="availability-dot"></span> Building, learning, and shipping</div>
+        </div>
+        <div class="hero-art reveal" aria-label="Abstract system map illustration">
+          <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+          <div class="art-core"><span class="core-spark">✳</span><span>ideas<br />in motion</span></div>
+          <div class="float-card card-eval"><span class="mini-icon mint">◎</span><span><b>Evaluate</b><small>measure what matters</small></span><i>↗</i></div>
+          <div class="float-card card-systems"><span class="mini-icon peach">⌘</span><span><b>Connect</b><small>data · models · people</small></span></div>
+          <div class="float-card card-build"><span class="mini-icon lilac">✳</span><span><b>Build</b><small>useful by design</small></span></div>
+          <div class="art-caption"><span class="caption-rule"></span> A little curiosity, made tangible.</div>
+        </div>
+        <div class="scroll-cue" aria-hidden="true"><span>SCROLL TO EXPLORE</span><i></i></div>
+      </section>
+
+      <section class="work-section section-wrap" id="work">
+        <div class="section-heading reveal">
+          <div><div class="eyebrow"><span class="eyebrow-line"></span> SELECTED WORK</div><h2>Projects with a point of view<span class="accent-dot">.</span></h2></div>
+          <p>Systems, experiments, and tools shaped around a clear question. Each project links to its source repository.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-feature reveal" data-project="greenmind">
+            <div class="project-top"><span class="project-index">01 / CLOUD SYSTEMS</span><a class="external-link" href="https://github.com/Pratham-stack-coder/GreenMind-AI" target="_blank" rel="noreferrer" aria-label="Open GreenMind AI repository">↗</a></div>
+            <div class="project-visual green-visual" aria-hidden="true"><div class="cloud-ring ring-a"></div><div class="cloud-ring ring-b"></div><div class="cloud-node node-a">AWS</div><div class="cloud-node node-b">AZ</div><div class="cloud-node node-c">GCP</div><div class="cloud-hub">G<br /><small>AI</small></div><div class="visual-label">signal → decision</div></div>
+            <div class="project-content"><div class="project-kicker">Multi-cloud · Decision support</div><h3>GreenMind AI</h3><p>A green cloud operations concept bringing telemetry, forecasts, multi-agent recommendations, and non-destructive scenario simulation together.</p><div class="tag-row"><span>FastAPI</span><span>React</span><span>LangGraph</span><span>scikit-learn</span></div><button class="text-link case-open" type="button" data-case="greenmind">Explore case study <span>↗</span></button></div>
+          </article>
+
+          <article class="project-card reveal" data-project="eval">
+            <div class="project-top"><span class="project-index">02 / AI QUALITY</span><a class="external-link" href="https://github.com/prathamforgelab/LLM-Evaluation-Lab" target="_blank" rel="noreferrer" aria-label="Open LLM Evaluation Lab repository">↗</a></div>
+            <div class="project-visual eval-visual" aria-hidden="true"><div class="eval-window"><div class="window-bar"><b></b><b></b><b></b><span>experiment / 02</span></div><div class="eval-row"><span>baseline</span><i class="bar bar-short"></i><b>A</b></div><div class="eval-row"><span>candidate</span><i class="bar bar-long"></i><b>B</b></div><div class="ci-line"><span></span><small>paired confidence interval</small></div></div><div class="visual-label">illustrative comparison</div></div>
+            <div class="project-content"><div class="project-kicker">LLMs · Evaluation</div><h3>LLM Evaluation Lab</h3><p>A reproducible toolkit for testing prompts and models with layered evaluators and paired statistical regression checks.</p><div class="tag-row"><span>Python</span><span>FastAPI</span><span>React</span><span>Statistics</span></div><button class="text-link case-open" type="button" data-case="eval">Explore case study <span>↗</span></button></div>
+          </article>
+
+          <article class="project-card reveal" data-project="industrial">
+            <div class="project-top"><span class="project-index">03 / RESEARCH SYSTEMS</span><a class="external-link" href="https://github.com/Pratham-stack-coder/industrial-failure-mechanism-discovery" target="_blank" rel="noreferrer" aria-label="Open industrial failure discovery repository">↗</a></div>
+            <div class="project-visual mechanism-visual" aria-hidden="true"><div class="timeline-line"></div><div class="timeline-point point-1"><b>t−6h</b><span>signal shift</span></div><div class="timeline-point point-2"><b>t−2h</b><span>process event</span></div><div class="timeline-point point-3"><b>t0</b><span>failure</span></div><div class="mechanism-note">cause → evidence → hypothesis</div></div>
+            <div class="project-content"><div class="project-kicker">Temporal data · Causal reasoning</div><h3>Industrial Failure Mechanism Discovery</h3><p>A team research system that ranks competing failure explanations from sensor, production, quality, and maintenance data.</p><div class="tag-row"><span>Python</span><span>FastAPI</span><span>React</span><span>NetworkX</span></div><button class="text-link case-open" type="button" data-case="industrial">Explore case study <span>↗</span></button></div>
+          </article>
+
+          <article class="project-card reveal" data-project="echopilot">
+            <div class="project-top"><span class="project-index">04 / INTERACTION</span><a class="external-link" href="https://github.com/Pratham-stack-coder/EchoPilot" target="_blank" rel="noreferrer" aria-label="Open EchoPilot repository">↗</a></div>
+            <div class="project-visual echo-visual" aria-hidden="true"><div class="echo-ripple ripple-one"></div><div class="echo-ripple ripple-two"></div><div class="echo-center">EP</div><div class="echo-chip chip-one">monitor</div><div class="echo-chip chip-two">assist</div><div class="echo-chip chip-three">control</div></div>
+            <div class="project-content"><div class="project-kicker">Voice UI · PC companion</div><h3>EchoPilot</h3><p>A companion interface concept for bringing live monitoring, remote control, and AI assistance to an Echo Show.</p><div class="tag-row"><span>Python</span><span>Flask</span><span>Voice UI</span></div><button class="text-link case-open" type="button" data-case="echopilot">Explore case study <span>↗</span></button></div>
+          </article>
+
+          <article class="project-card project-small reveal" data-project="voice">
+            <div class="project-top"><span class="project-index">05 / VOICE AI</span><a class="external-link" href="https://github.com/Pratham-stack-coder/Python-voice-AI" target="_blank" rel="noreferrer" aria-label="Open Python Voice AI repository">↗</a></div>
+            <div class="project-visual voice-visual" aria-hidden="true"><div class="voice-wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="voice-transcript">“What can I help with?”</div></div>
+            <div class="project-content"><div class="project-kicker">Conversational AI</div><h3>Python Voice Assistant</h3><p>A real-time voice-to-voice assistant concept using ElevenLabs Conversational AI.</p><div class="tag-row"><span>Python</span><span>ElevenLabs</span></div><button class="text-link case-open" type="button" data-case="voice">Explore case study <span>↗</span></button></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="demo-section section-wrap" id="demo">
+        <div class="demo-intro reveal"><div class="eyebrow"><span class="eyebrow-line"></span> SMALL INTERACTIVE DEMO</div><h2>Think in evidence.<br /><em>Then make a call.</em></h2><p>A browser-only illustration of two ideas from the projects: compare model outputs and inspect a cloud scenario. The examples are synthetic and do not connect to a live service.</p><div class="demo-tabs" role="tablist" aria-label="Choose a demo"><button class="demo-tab active" role="tab" aria-selected="true" aria-controls="eval-demo" id="tab-eval" data-tab="eval-demo">LLM evaluation</button><button class="demo-tab" role="tab" aria-selected="false" aria-controls="cloud-demo" id="tab-cloud" data-tab="cloud-demo">Cloud scenario</button></div></div>
+        <div class="demo-panel reveal">
+          <div class="demo-panel-head"><span class="demo-status"><i></i> LOCAL PLAYGROUND</span><span class="demo-count">01 — 02</span></div>
+          <div class="demo-pane active" id="eval-demo" role="tabpanel" aria-labelledby="tab-eval">
+            <div class="demo-title"><div><small>QUALITY CHECK</small><h3>Compare two answers</h3></div><span class="demo-symbol">Δ</span></div>
+            <label class="field-label" for="expected-answer">Expected key phrase</label><input id="expected-answer" class="demo-input" value="clear evidence" />
+            <div class="answer-grid"><label><span class="field-label">Baseline answer</span><textarea id="baseline-answer" class="demo-input" rows="3">The model makes a confident guess.</textarea></label><label><span class="field-label">Candidate answer</span><textarea id="candidate-answer" class="demo-input" rows="3">The result should include clear evidence and uncertainty.</textarea></label></div>
+            <div class="demo-result" id="eval-result" aria-live="polite"><span class="result-label">WORD COVERAGE</span><strong>Ready to compare</strong><small>Try your own phrases, then run a tiny local check.</small></div>
+            <button class="button button-primary demo-run" type="button" id="run-eval">Run sample comparison <span>↗</span></button>
+            <p class="demo-footnote">Illustrative word coverage only. This is not the evaluation engine or a statistical result.</p>
+          </div>
+          <div class="demo-pane" id="cloud-demo" role="tabpanel" aria-labelledby="tab-cloud" hidden>
+            <div class="demo-title"><div><small>SCENARIO EXPLORER</small><h3>Adjust a simulated workload</h3></div><span class="demo-symbol">⌁</span></div>
+            <label class="field-label" for="cpu-range">Current CPU load <output id="cpu-output" for="cpu-range">62%</output></label><input id="cpu-range" class="range-input" type="range" min="10" max="95" value="62" />
+            <div class="scenario-select"><button class="scenario-chip selected" type="button" data-scenario="rightsize">Right-size</button><button class="scenario-chip" type="button" data-scenario="scale">Scale up</button><button class="scenario-chip" type="button" data-scenario="shift">Time-shift</button></div>
+            <div class="scenario-result" id="scenario-result" aria-live="polite"><span class="result-label">SIMULATED PREVIEW</span><strong>Capacity looks balanced</strong><small>At 62% CPU, review headroom before changing instance size.</small></div>
+            <p class="demo-footnote">Illustrative logic only. GreenMind AI labels its digital-twin outputs as simulated/estimated.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="approach-section section-wrap" id="approach">
+        <div class="section-heading reveal"><div><div class="eyebrow"><span class="eyebrow-line"></span> HOW I APPROACH THE WORK</div><h2>Curious, methodical,<br /><em>grounded in reality.</em></h2></div><p>Build systems that make their assumptions visible, treat evidence with respect, and stay useful beyond a demo.</p></div>
+        <div class="approach-grid">
+          <article class="approach-card reveal"><span>01</span><h3>Start with the question</h3><p>Understand the problem and the people around it before reaching for a model or framework.</p></article>
+          <article class="approach-card reveal"><span>02</span><h3>Make reasoning inspectable</h3><p>Prefer measurable evaluation, visible evidence, and clear uncertainty over confident guesswork.</p></article>
+          <article class="approach-card reveal"><span>03</span><h3>Ship the whole experience</h3><p>Connect the data, backend, interface, and deployment so the idea can be explored end to end.</p></article>
+        </div>
+        <div class="toolkit reveal"><div><span class="toolkit-label">VERIFIED TOOLKIT</span><p>Technologies represented in the linked public projects</p></div><div class="toolkit-tags"><span>Python</span><span>FastAPI</span><span>React</span><span>TypeScript</span><span>scikit-learn</span><span>LangGraph</span><span>Docker</span><span>PostgreSQL</span><span>Java</span></div></div>
+      </section>
+
+      <section class="profiles-section section-wrap" id="profiles">
+        <div class="profile-card reveal"><div class="profile-copy"><div class="eyebrow"><span class="eyebrow-line"></span> FIND ME ON GITHUB</div><h2>More code.<br /><em>More context.</em></h2><p>Repositories and experiments across two connected GitHub profiles.</p></div><div class="profile-links"><a href="https://github.com/Pratham-stack-coder" target="_blank" rel="noreferrer"><span class="github-mark">GH</span><span><b>Pratham-stack-coder</b><small>Personal profile</small></span><i>↗</i></a><a href="https://github.com/prathamforgelab" target="_blank" rel="noreferrer"><span class="github-mark">GH</span><span><b>prathamforgelab</b><small>Second connected profile</small></span><i>↗</i></a></div></div>
+      </section>
+      <section class="closing section-wrap"><div class="closing-inner reveal"><span class="closing-star">✳</span><div><div class="eyebrow"><span class="eyebrow-line"></span> NEXT CHAPTER</div><h2>Good work starts<br />with a good question.</h2></div><a class="button button-primary" href="https://github.com/Pratham-stack-coder" target="_blank" rel="noreferrer">Explore my GitHub <span>↗</span></a></div></section>
+    </main>
+
+    <footer class="site-footer section-wrap"><a class="brand" href="#top"><span class="brand-mark">P<span>G</span></span><span class="brand-name">Pratham Gupta</span></a><p>Designed with curiosity. Built with care.</p><a href="#top" class="back-top">Back to top ↑</a><small>© <span id="year"></span> Pratham Gupta</small></footer>
+
+    <dialog class="case-dialog" id="case-dialog" aria-labelledby="case-title">
+      <div class="dialog-top"><span class="eyebrow"><span class="eyebrow-line"></span> PROJECT NOTES</span><button type="button" class="dialog-close" aria-label="Close case study">×</button></div>
+      <div class="dialog-content"><div class="project-kicker" id="case-kicker"></div><h2 id="case-title"></h2><p class="case-summary" id="case-summary"></p><div class="case-columns"><section><h3>The question</h3><p id="case-problem"></p></section><section><h3>Approach</h3><p id="case-approach"></p></section></div><div class="case-tech" id="case-tech"></div><a class="button button-primary case-repo" id="case-repo" href="#" target="_blank" rel="noreferrer">View source repository <span>↗</span></a><p class="case-note">Case study details summarize the linked repository README. No unverified performance claims are added.</p></div>
+    </dialog>
+    <div class="dialog-scrim" hidden></div>
+  </body>
+</html>
