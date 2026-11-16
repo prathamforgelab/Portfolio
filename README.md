@@ -14,5 +14,8 @@ The workflow in `.github/workflows/pages.yml` deploys the repository root to Git
 
 - Project summaries link to their source repositories and avoid unverified performance claims.
 - The interactive playground uses synthetic examples in the browser; it does not connect to the project backends.
+- Demo tabs support arrow keys, Home, and End; the mobile menu closes with Escape or an outside click.
+- Scroll reveals are progressive enhancement, so the content remains visible when animation support is unavailable.
+- Open Graph metadata, a canonical URL, and an SVG favicon are included for sharing and browser tabs.
 - `assets/Pratham_Gupta_Resume.pdf` is the downloadable, text-based resume.
 - Direct contact details and education history are omitted because they were not verified in the supplied profiles.

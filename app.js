@@ -23,29 +23,50 @@ themeButton.addEventListener("click", () => {
 });
 updateThemeButton();
 
-menuButton.addEventListener("click", () => {
-  const open = menuButton.getAttribute("aria-expanded") !== "true";
-  menuButton.setAttribute("aria-expanded", String(open));
-  menuButton.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
-  nav.classList.toggle("open", open);
-});
-nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => {
+function closeMenu(restoreFocus = false) {
+  const wasOpen = menuButton.getAttribute("aria-expanded") === "true";
   nav.classList.remove("open");
   menuButton.setAttribute("aria-expanded", "false");
   menuButton.setAttribute("aria-label", "Open navigation");
-}));
+  if (restoreFocus && wasOpen) menuButton.focus();
+}
+
+menuButton.addEventListener("click", () => {
+  const open = menuButton.getAttribute("aria-expanded") !== "true";
+  if (!open) {
+    closeMenu();
+    return;
+  }
+  menuButton.setAttribute("aria-expanded", "true");
+  menuButton.setAttribute("aria-label", "Close navigation");
+  nav.classList.add("open");
+});
+nav.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => closeMenu()));
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeMenu(true);
+});
+document.addEventListener("click", (event) => {
+  const menuOpen = menuButton.getAttribute("aria-expanded") === "true";
+  if (menuOpen && !nav.contains(event.target) && !menuButton.contains(event.target)) closeMenu();
+});
 
 const revealItems = document.querySelectorAll(".reveal");
 if ("IntersectionObserver" in window) {
-  const observer = new IntersectionObserver((entries, activeObserver) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        activeObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12, rootMargin: "0px 0px -24px 0px" });
-  revealItems.forEach((item) => observer.observe(item));
+  try {
+    const observer = new IntersectionObserver((entries, activeObserver) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          activeObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -24px 0px" });
+    root.classList.add("reveal-ready");
+    revealItems.forEach((item) => observer.observe(item));
+  } catch (_) {
+    root.classList.remove("reveal-ready");
+    revealItems.forEach((item) => item.classList.add("visible"));
+  }
 } else {
   revealItems.forEach((item) => item.classList.add("visible"));
 }
@@ -124,18 +145,35 @@ dialog.addEventListener("click", (event) => {
 
 const tabs = document.querySelectorAll(".demo-tab");
 const panes = document.querySelectorAll(".demo-pane");
-tabs.forEach((tab) => tab.addEventListener("click", () => {
+function selectDemoTab(selectedTab, moveFocus = false) {
   tabs.forEach((item) => {
-    const active = item === tab;
+    const active = item === selectedTab;
     item.classList.toggle("active", active);
     item.setAttribute("aria-selected", String(active));
+    item.tabIndex = active ? 0 : -1;
   });
   panes.forEach((pane) => {
-    const active = pane.id === tab.dataset.tab;
+    const active = pane.id === selectedTab.dataset.tab;
     pane.hidden = !active;
     pane.classList.toggle("active", active);
   });
-}));
+  if (moveFocus) selectedTab.focus();
+}
+
+tabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => selectDemoTab(tab));
+  tab.addEventListener("keydown", (event) => {
+    let nextIndex = index;
+    if (event.key === "ArrowRight") nextIndex = (index + 1) % tabs.length;
+    else if (event.key === "ArrowLeft") nextIndex = (index - 1 + tabs.length) % tabs.length;
+    else if (event.key === "Home") nextIndex = 0;
+    else if (event.key === "End") nextIndex = tabs.length - 1;
+    else return;
+    event.preventDefault();
+    selectDemoTab(tabs[nextIndex], true);
+  });
+});
+if (tabs.length) selectDemoTab(tabs[0]);
 
 function wordCoverage(text, phrase) {
   const tokens = phrase.toLowerCase().match(/[a-z0-9]+/g) || [];
